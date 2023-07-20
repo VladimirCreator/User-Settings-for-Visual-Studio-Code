@@ -1,6 +1,9 @@
 {
     /* open
     */
+    "editor.fontFamily": "'JetBrains Mono'",
+	"editor.fontLigatures": false,
+	"editor.fontSize": 14,
 
 	// export
 	"files.eol": "\n",
@@ -27,6 +30,7 @@
 	"audioCues.terminalQuickFix": "off",
 	"audioCues.volume": 100,
 
+    // private
 	"breadcrumbs.enabled": true,
 	"breadcrumbs.filePath": "off",
 	"breadcrumbs.icons": false,
@@ -128,9 +132,6 @@
 	"editor.foldingImportsByDefault": false,
 	"editor.foldingMaximumRegions": 65000,
 	"editor.foldingStrategy": "auto",
-	"editor.fontFamily": "'JetBrains Mono'",
-	"editor.fontLigatures": false,
-	"editor.fontSize": 14,
 	"editor.fontWeight": "normal",
 	"editor.formatOnPaste": false,
 	"editor.formatOnSave": false,
