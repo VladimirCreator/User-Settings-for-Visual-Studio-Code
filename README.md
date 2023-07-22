@@ -13,6 +13,7 @@
         "workbench.activityBar.visible": false,
         "workbench.list.openMode": "doubleClick",
         "workbench.tree.expandMode": "doubleClick",
+        "workbench.quickOpen.closeOnFocusLost": false,
     /* open */
         "editor.fontFamily"   : "JetBrains Mono",
         "editor.fontLigatures": false,
@@ -504,7 +505,6 @@
         "workbench.panel.defaultLocation": "right",
         "workbench.panel.opensMaximized": "always",
         "workbench.productIconTheme": "Default",
-        "workbench.quickOpen.closeOnFocusLost": false,
         "workbench.quickOpen.preserveInput": true,
         "workbench.reduceMotion": "auto",
         "workbench.settings.editor": "ui",
