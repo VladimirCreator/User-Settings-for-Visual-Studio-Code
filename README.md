@@ -10,6 +10,7 @@
 ```json
 {
     /* iPadOS */
+        "workbench.activityBar.visible": false,
         "workbench.list.openMode": "doubleClick",
         "workbench.tree.expandMode": "doubleClick",
     /* open */
@@ -477,7 +478,6 @@
         "window.titleBarStyle": "custom",
         "window.titleSeparator": " → ",
         "workbench.activityBar.iconClickBehavior": "toggle",
-        "workbench.activityBar.visible": false,
         "workbench.commandPalette.history": 7,
         "workbench.commandPalette.preserveInput": true,
         "workbench.editor.centeredLayoutAutoResize": true,
