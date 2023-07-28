@@ -10,10 +10,11 @@
 ```json
 {
     /* iPadOS */
-        "workbench.activityBar.visible": false,
-        "workbench.list.openMode": "doubleClick",
-        "workbench.tree.expandMode": "doubleClick",
-        "workbench.quickOpen.closeOnFocusLost": false,
+        "editor.showFoldingControls": "mouseover",     // should be `"always"`
+        "workbench.activityBar.visible": false,        // should be `true`
+        "workbench.list.openMode": "doubleClick",      // should be `"singleClick"`
+        "workbench.tree.expandMode": "doubleClick",    // should be `"singleClick"`
+        "workbench.quickOpen.closeOnFocusLost": false, // should be `true`
     /* open */
         "editor.fontFamily"   : "JetBrains Mono",
         "editor.fontLigatures": false,
@@ -226,7 +227,6 @@
         "editor.scrollPredominantAxis": true,
         "editor.selectionHighlight": true,
         "editor.showDeprecated": true,
-        "editor.showFoldingControls": "mouseover",
         "editor.showUnused": true,
         "editor.smoothScrolling": true,
         "editor.snippetSuggestions": "inline",
