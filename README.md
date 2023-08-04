@@ -1,4 +1,4 @@
-# Visual Studio Code Insiders 1.80.0
+# Visual Studio Code 1.81.0
 
 ## Table of Contents
 - iPadOS
