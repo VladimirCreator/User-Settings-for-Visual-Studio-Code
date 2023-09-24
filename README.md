@@ -386,7 +386,7 @@
         "search.actionsPosition": "auto",
         "search.collapseResults": "alwaysCollapse",
         "search.maxResults": null,
-        "search.mode": "reuseEditor",
+        "search.mode": "view",
         "search.showLineNumbers": true,
         "search.sortOrder": "countDescending",
         "security.workspace.trust.banner": "never",
