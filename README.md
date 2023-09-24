@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - iPadOS
+- TypeScript
 - `open`
 - `export`
 - `ignore`
@@ -15,6 +16,10 @@
         "workbench.list.openMode": "doubleClick",      // should be `"singleClick"`
         "workbench.tree.expandMode": "doubleClick",    // should be `"singleClick"`
         "workbench.quickOpen.closeOnFocusLost": false, // should be `true`
+
+    /* TypeScript */
+        
+
     /* open */
         "editor.fontFamily"   : "JetBrains Mono",
         "editor.fontLigatures": false,
