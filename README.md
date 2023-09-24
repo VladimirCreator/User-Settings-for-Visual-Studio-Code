@@ -18,7 +18,8 @@
         "workbench.quickOpen.closeOnFocusLost": false, // should be `true`
 
     /* TypeScript */
-        
+        // It contains `false` because `noUnusedLocals` in `tsconfig.json` treats these as errors.
+        "typescript.reportStyleChecksAsWarnings": false
 
     /* open */
         "editor.fontFamily"   : "JetBrains Mono",
