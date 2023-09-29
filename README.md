@@ -49,6 +49,7 @@
             "editor.tabSize": 2
         },
     /* export */
+        "editor.colorDecoratorsActivatedOn": "click",
         "editor.formatOnPaste": false,
         "editor.formatOnSave" : false,
         "editor.formatOnType" : false,
