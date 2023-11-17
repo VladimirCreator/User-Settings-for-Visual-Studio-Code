@@ -10,43 +10,44 @@
 
 ```json
 {
-  /* Appearance // Initially Modified at 09:56 AM on Wed 15 Nov 2023
-  */
-		"editor.fontFamily": "monospace",
-		"editor.fontLigatures": false,
-		"editor.fontSize": 14, "editor.fontWeight": "normal",
-		// ---
-		"workbench.colorTheme": "",
-		"workbench.preferredLightColorTheme": "",
-		"workbench.preferredDarkColorTheme": "",
-		"workbench.preferredHighContrastLightColorTheme": "", "workbench.preferredHighContrastColorTheme": "", // Why is not called `workbench.preferredHighContrastDarkColorTheme`?
+	/* These settings depend on hardware I use and my mood as well.
+	*/
+	"editor.fontFamily": /* JetBrains Mono */ "Menlo, monospace",
+	"editor.fontLigatures": false,
+	"editor.fontSize": /*12-14*/ 12, "editor.fontWeight": "normal",
 
-	/* iPadOS */
-		"editor.showFoldingControls": "mouseover", // `always` is the best
-    // ---
-    "files.autoSave": "off", // `afterDelay` is the best
-    // ---
-    "window.menuBarVisibility": "toggle", // `visible` is the best
-		// ---
-		"workbench.list.openMode": "doubleClick", // `singleClick` is the best
-		"workbench.quickOpen.closeOnFocusLost": false, // `true` is the best
-		"workbench.tree.expandMode": "doubleClick", // `singleClick` is the best
+	"workbench.colorTheme": "Default Light+",
+	"workbench.preferredLightColorTheme": "", "workbench.preferredDarkColorTheme": "",
+	"workbench.preferredHighContrastLightColorTheme": "", "workbench.preferredHighContrastColorTheme": "",
 
-	/* TypeScript */
-		"typescript.reportStyleChecksAsWarnings": false, // It is `false` because a `tsconfig.json` file treats `noUnusedLocals` as errors.
+	/* These settings depend on operating system I use.
+	iPadOS is the default operating system.
+	*/
+	"editor.showFoldingControls": "always"/* mouseover */,
+
+	"files.autoSave": "afterDelay"/* off */,
+
+	"workbench.list.openMode": "singleClick"/* doubleClick */,
+	"workbench.quickOpen.closeOnFocusLost": true/* false */,
+	"workbench.tree.expandMode": "singleClick"/* doubleClick */,
+
+	// TypeScript
+	"typescript.reportStyleChecksAsWarnings": false, // It is `false` because a `tsconfig.json` file treats `noUnusedLocals` as errors.
 
 	/* export */
-  "editor.tabSize": 2,
+	"editor.tabSize": 2,
 	"editor.colorDecoratorsActivatedOn": "click",
-	"editor.formatOnPaste": false, "editor.formatOnSave": false,
+	"editor.formatOnPaste": false,
+	"editor.formatOnSave": false,
 	"editor.formatOnType": false,
-	"editor.insertSpaces": true,
+	"editor.insertSpaces": false,
 	"editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
-	"extensions.autoCheckUpdates": false, "extensions.autoUpdate": false,
+	"extensions.autoCheckUpdates": false,
+	"extensions.autoUpdate": false,
 	"files.associations": {
 		"*.c": "c", "*.cpp": "cpp", "*.cs": "csharp",
 		"*.swift": "swift",
-		"*.js": "javascript", "*.jsx": "javascriptreact",
+		"*.m?js": "javascript", "*.jsx": "javascriptreact",
 		"*.ts": "typescript", "*.tsx": "typescriptreact",
 		"*.sh": "shellscript",
 		"*.md": "markdown", "*.html": "html"
@@ -296,12 +297,12 @@
 
 	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.patterns": {
-    "*.h": "${capture}.cpp",
-  	"*.js" : "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
-  	"*.jsx": "${capture}.js",
-  	"*.ts" : "${capture}.js", "*.tsx": "${capture}.ts",
-    "tsconfig.json": "tsconfig.*.json",
-  	"package.json": "package-lock.json"
+		"*.h": "${capture}.cpp",
+		"*.js" : "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+		"*.jsx": "${capture}.js",
+		"*.ts" : "${capture}.js", "*.tsx": "${capture}.ts",
+		"tsconfig.json": "tsconfig.*.json",
+		"package.json": "package-lock.json"
 	},
 
 	"explorer.incrementalNaming": "smart",
@@ -314,16 +315,16 @@
 	"files.enableTrash": true,
 	"files.encoding": "utf8",
 	"files.exclude": {
-  	"*.csproj": true,
-  	"*.exe": true,
-  	"*.out": true,
-  	"**/.DS_Store": false,
-  	"**/.hg": false,
-  	"**/.svn": false,
-  	"**/.vs": true,
-  	"**/.vscode": true,
-  	"**/CVS": false,
-  	"**/Thumbs.db": false
+		"*.csproj": true,
+		"*.exe": true,
+		"*.out": true,
+		"**/.DS_Store": false,
+		"**/.hg": false,
+		"**/.svn": false,
+		"**/.vs": true,
+		"**/.vscode": true,
+		"**/CVS": false,
+		"**/Thumbs.db": false
 	},
 	"files.refactoring.autoSave": false,
 	"files.restoreUndoStack": true,
@@ -428,29 +429,29 @@
 	"terminal.integrated.fontSize": 14,
 	"terminal.integrated.gpuAcceleration": "on",
 	"terminal.integrated.profiles.windows": {
-  	"PowerShell": {
-    	"source": "PowerShell", "icon": "terminal-powershell"
-  	},
-  	"Command Prompt": {
-    	"path": [
-    			"${env:windir}\\Sysnative\\cmd.exe",
-    			"${env:windir}\\System32\\cmd.exe"
-    	],
-    	"args": [],
-    	"icon": "terminal-cmd"
-  	},
-  	"Developer Command Prompt": {
-    	"path": [
-    			"${env:windir}\\System32\\cmd.exe"
-    	],
-    	"args": [
-    			"/k",
-    			"A:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\VsDevCmd.bat",
-    			"-arch=x64",
-    			"-host_arch=x64"
-    	],
-    	"icon": "terminal-cmd"
-  	}
+		"PowerShell": {
+			"source": "PowerShell", "icon": "terminal-powershell"
+		},
+		"Command Prompt": {
+			"path": [
+					"${env:windir}\\Sysnative\\cmd.exe",
+					"${env:windir}\\System32\\cmd.exe"
+			],
+			"args": [],
+			"icon": "terminal-cmd"
+		},
+		"Developer Command Prompt": {
+			"path": [
+					"${env:windir}\\System32\\cmd.exe"
+			],
+			"args": [
+					"/k",
+					"A:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\Tools\\VsDevCmd.bat",
+					"-arch=x64",
+					"-host_arch=x64"
+			],
+			"icon": "terminal-cmd"
+		}
 	},
 	"terminal.integrated.rightClickBehavior": "default",
 	"terminal.integrated.scrollback": 4294967295,
@@ -488,8 +489,9 @@
 	"window.title": "${rootName}${separator}${activeFolderMedium}${separator}${dirty}${activeEditorShort}",
 	"window.titleBarStyle": "custom",
 	"window.titleSeparator": " → ",
+  "window.menuBarVisibility": "toggle",
 	"workbench.activityBar.iconClickBehavior": "toggle",
-  "workbench.activityBar.location": "hidden",
+	"workbench.activityBar.location": "hidden",
 	"workbench.commandPalette.history": 7,
 	"workbench.commandPalette.preserveInput": true,
 	"workbench.editor.centeredLayoutAutoResize": true,
@@ -501,7 +503,7 @@
 	"workbench.editor.mouseBackForwardToNavigate": false,
 	"workbench.editor.pinnedTabSizing": "normal",
 	"workbench.editor.showIcons": true,
-	"workbench.editor.showTabs": true,
+	"workbench.editor.showTabs": "multiple",
 	"workbench.editor.splitOnDragAndDrop": false,
 	"workbench.editor.untitled.labelFormat": "name",
 	"workbench.editor.wrapTabs": true,
@@ -537,8 +539,8 @@
 	"zenMode.hideActivityBar": false,
 	"zenMode.hideLineNumbers": false,
 	"zenMode.hideStatusBar": false,
-	"zenMode.hideTabs": true,
-	"zenMode.restore": false
+	"zenMode.restore": false,
+	"zenMode.showTabs": "single"
 }
 ```
 
