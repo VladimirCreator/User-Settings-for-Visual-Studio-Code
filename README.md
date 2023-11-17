@@ -541,3 +541,6 @@
 	"zenMode.restore": false
 }
 ```
+
+## License
+See [license](LICENSE) for more information.
