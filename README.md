@@ -23,6 +23,7 @@
 	/* These settings depend on operating system I use.
 	iPadOS is the default operating system.
 	*/
+	"editor.inlayHints.enabled": "offUnlessPressed",
 	"editor.showFoldingControls": "always"/* mouseover */,
 
 	"files.autoSave": "afterDelay"/* off */,
@@ -184,7 +185,6 @@
 	"editor.hover.above": true,
 	"editor.hover.enabled": true,
 	"editor.hover.sticky": true,
-	"editor.inlayHints.enabled": "offUnlessPressed",
 	"editor.inlayHints.fontFamily": "",
 	"editor.inlayHints.fontSize": 0,
 	"editor.inlayHints.padding": true,
